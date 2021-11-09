@@ -1,0 +1,28 @@
+:root {
+    --mainBg: #303030;
+    --sectionBg: #1d2125;
+    --contrastBg: #131313;
+    --highlight: #3cb8aa;
+    --highlightOne: #4bcabf;
+    --highlightTwo: #2b9087;
+    --componentHighlight: #373b3e;
+    --appWhite: #dfdede;
+
+
+    --topBarHeight: 50px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: var(--appWhite);
+    background: var(--mainBg);
+    font-family: "Roboto Mono", monospace;
+    scroll-behavior: smooth;
+}
+
+a {
+    color: inherit;
+    text-decoration: none !important;
+}
