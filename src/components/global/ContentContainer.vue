@@ -7,12 +7,12 @@
 <style scoped>
 .contents-container {
     width: Calc(100vw - 270px);
-    background: var(--sectionBg);
+    background: var(--contentsBg);
     min-height: 100%;
     margin-left: 10px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     overflow-y: auto;
-    padding: 10px;
+    padding: 15px 10px;
 }
 </style>

@@ -12,6 +12,6 @@
     height: 100%;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-    padding: 10px;
+    padding: 15px 10px;
 }
 </style>

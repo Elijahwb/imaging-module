@@ -42,7 +42,7 @@ export default {
     display: flex;
     justify-content: space-between;
     margin-top: 10px;
-    height: calc(100vh - var(--topBarHeight) - 10px);
+    height: calc(100vh - var(--topBarHeight) - 50px);
 }
 .app-container {
     font-family: "Mohave";

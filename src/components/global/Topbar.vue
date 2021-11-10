@@ -55,7 +55,9 @@
     border-left:1px solid #ff9500;
 }
 .menu-item.router-link-exact-active {
-    background: #ff9500;
+    /* background: #ff9500; */
+    background: rgb(249,142,0);
+    background: linear-gradient(0deg, rgba(249,142,0,1) 0%, rgba(255,147,2,1) 35%, rgba(255,182,102,1) 100%);
 }
 /* .menu-item {
     width: 100px;
