@@ -3,9 +3,9 @@
         <Topbar />
         <section class="sections">
             <Sidecontent>
-                <div class="container">
+                <!-- <div class="container"> -->
                     <SideBar/>
-                </div>
+                <!-- </div> -->
             </Sidecontent>
             <Contentsection>
                 <div class="container">

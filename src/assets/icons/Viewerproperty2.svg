@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+  <g id="Viewer_property_2" data-name="Viewer property 2" transform="translate(-161 -583)">
+    <g id="Viewer_property_2-2" data-name="Viewer property 2" transform="translate(161.229 583)">
+      <path id="Path_1130" data-name="Path 1130" d="M0,0H19.54V19.54H0Z" fill="none"/>
+      <path id="Path_1131" data-name="Path 1131" d="M10.142,18.283a8.142,8.142,0,1,1,8.142-8.142A8.142,8.142,0,0,1,10.142,18.283Zm0-.628a7.392,7.392,0,0,0,7.513-7.513C17.63,5.3,14.334,2.652,10.142,2.628s-7.37,2.685-7.513,7.513A7.335,7.335,0,0,0,10.142,17.655Zm0-2.628V5.257a4.885,4.885,0,1,1,0,9.77Z" transform="translate(-0.372 -0.372)" fill="#c7beb7"/>
+    </g>
+    <g id="Rectangle_1935" data-name="Rectangle 1935" transform="translate(161 583)" fill="none" stroke="#707070" stroke-width="1" opacity="0">
+      <rect width="20" height="20" stroke="none"/>
+      <rect x="0.5" y="0.5" width="19" height="19" fill="none"/>
+    </g>
+  </g>
+</svg>

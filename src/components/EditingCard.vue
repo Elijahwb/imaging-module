@@ -38,7 +38,7 @@ a {
   margin-top: 2px;
   padding: 10px 15px;
   display: flex;
-  background-color: rgb(155, 151, 151);
+  background-color: #484545;
   justify-content: space-between;
   align-items: center;
   border-radius: 0px 0px 8px 8px;
@@ -46,7 +46,7 @@ a {
 .card-container {
   text-align: left;
   width: 100%;
-  background: #fff;
+  background: #e6cbb5;
   /* padding: 10px 15px; */
   border-radius: 8px;
   box-shadow: 5px 5px 10px rgba(0,0,0,.05);

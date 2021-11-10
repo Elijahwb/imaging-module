@@ -3,13 +3,13 @@
         <Topbar />
         <section class="sections">
             <Sidecontent>
-                <div class="container">
+                <!-- <div class="container"> -->
                     <SideBar3d/>
-                </div>
+                <!-- </div> -->
             </Sidecontent>
             <Contentsection>
                 <div class="container">
-                    3D Content comming soon..
+                    <ContentBody/>
                 </div>
             </Contentsection>
         </section>
@@ -21,13 +21,15 @@ import Topbar from "../global/Topbar.vue";
 import Sidecontent from "../global/SideContent.vue";
 import Contentsection from "../global/ContentContainer.vue";
 import SideBar3d from "./3dSidebar.vue" 
+import ContentBody from "./3dContent.vue"
 
 export default {
     components: {
         Topbar,
         Sidecontent,
         Contentsection,
-        SideBar3d
+        SideBar3d,
+        ContentBody
     }
 }
 </script>
