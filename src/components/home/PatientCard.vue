@@ -28,7 +28,9 @@ export default {
 <style scoped>
 .date-added {
     height: 100%;
-    margin-top: 60px;
+    font-size: 12px;
+    display: flex;
+    align-items: flex-end;
 }
 .gender.female {
     background: #f6492e;
@@ -37,14 +39,13 @@ export default {
     background: #1e84bb;
 }
 .gender {
-    font-size: 12px;
+    font-size: 11px;
     width: 20px;
-    height: 11px;
+    height: 14px;
     border-radius: 7px;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: .5px 0px;
     font-weight: 500;
 }
 .patient-avatar img {
@@ -71,11 +72,13 @@ export default {
     background: rgba(19, 19, 19, 0.215);
 }
 .patient-card-container {
+    width: 100%;
     background: transparent;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px;
     border-bottom: 2px solid var(--mainBg);
+    height: 90px;
 }
 </style>

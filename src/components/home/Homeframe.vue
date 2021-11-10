@@ -36,6 +36,7 @@
                 </div>
             </Sidecontent>
             <Contentsection>
+                
                 <TimeserieRow :images="paranomas" />
                 <TimeserieRow :images="paranomas" />
                 <TimeserieRow :images="paranomas" />

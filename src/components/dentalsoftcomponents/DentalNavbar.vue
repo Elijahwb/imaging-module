@@ -2,7 +2,7 @@
   <!--**********************************
             Header start
         ***********************************-->
-  <div class="header  container-fluid ">
+  <div class="header container-fluid">
     <div class="header-content">
       <nav class="navbar navbar-expand">
         <div class="collapse navbar-collapse  justify-content-between top-header mt-5 ml-0">

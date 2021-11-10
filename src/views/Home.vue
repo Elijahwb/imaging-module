@@ -3,7 +3,7 @@
 </template>
 
 <script>
-import Homeframe from "@/components/home/Homeframe2.vue";
+import Homeframe from "@/components/home/Homeframe.vue";
 
 export default {
     name: "Home",

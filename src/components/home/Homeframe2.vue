@@ -1,5 +1,5 @@
 <template>
-    <section class="app-container">
+    <section class="container">
         <Dentalnav />
     </section>
 </template>
@@ -27,15 +27,17 @@ export default {
 
 <style scoped>
 
-.sections {
+/* .sections {
     display: flex;
     justify-content: space-between;
     margin-top: 10px;
     height: calc(100vh - var(--topBarHeight) - 50px);
-}
+} */
 .app-container {
+    margin-top: 100px;
     font-family: "Mohave";
     padding: 0 10px;
     font-size: var(--normalFontSize);
+    overflow-y: scroll;
 }
 </style>
