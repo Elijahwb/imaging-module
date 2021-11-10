@@ -4,7 +4,7 @@
         <section class="sections">
             <Sidecontent>
                 <div class="container">
-                    3D Side content
+                    <SideBar3d/>
                 </div>
             </Sidecontent>
             <Contentsection>
@@ -20,12 +20,14 @@
 import Topbar from "../global/Topbar.vue";
 import Sidecontent from "../global/SideContent.vue";
 import Contentsection from "../global/ContentContainer.vue";
+import SideBar3d from "./3dSidebar.vue" 
 
 export default {
     components: {
         Topbar,
         Sidecontent,
         Contentsection,
+        SideBar3d
     }
 }
 </script>

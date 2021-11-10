@@ -4,12 +4,12 @@
         <section class="sections">
             <Sidecontent>
                 <div class="container">
-                    2D Side content
+                    <SideBar/>
                 </div>
             </Sidecontent>
             <Contentsection>
                 <div class="container">
-                    2D Content comming soon..
+                   <ContentBody/>
                 </div>
             </Contentsection>
         </section>
@@ -20,12 +20,16 @@
 import Topbar from "../global/Topbar.vue";
 import Sidecontent from "../global/SideContent.vue";
 import Contentsection from "../global/ContentContainer.vue";
+import SideBar from "./2dSideBar.vue"
+import ContentBody from "./2dContent.vue"
 
 export default {
     components: {
         Topbar,
         Sidecontent,
         Contentsection,
+        SideBar,
+        ContentBody
     }
 }
 </script>
