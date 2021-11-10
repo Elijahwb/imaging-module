@@ -1,14 +1,14 @@
 <template>
-    <section>
+    <section style="margin-bottom: 40px">
         <div class="date-heading">
-            {{date}}
+            {{imageType}}
         </div>
         <div class="images-row">
             <div class="image" v-for="img, index in images" :key="index">
                 <div class="image-source">
                     <img :src="require('@/assets/xrays/'+ img.name)" alt="">
                 </div>
-                <div class="image-type">{{img.type}}</div>
+                <!-- <div class="image-type">{{img.type}}</div> -->
             </div>
         </div>
     </section>
@@ -18,7 +18,7 @@
 export default {
     props: {
         images: Array,
-        date: String,
+        imageType: String,
     }
 }
 </script>
@@ -30,8 +30,8 @@ export default {
     object-fit: cover;
 }
 .image .image-source {
-    height: calc(100% - 40px);
-    margin-bottom: 10px;
+    height: calc(100% - 0px);
+    /* margin-bottom: 10px; */
     background: var(--mainBg);
 }
 .image-type {
@@ -68,5 +68,7 @@ export default {
 .date-heading {
     background: #131313;
     padding: 5px 10px;
+    /* font-family: "Mohavebold"; */
+    font-size: 15px;
 }
 </style>

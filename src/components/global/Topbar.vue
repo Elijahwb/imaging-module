@@ -6,11 +6,17 @@
            </router-link>
         </div>
         <div class="main-menu">
-            <router-link class="menu-item" to="/">Patient</router-link>
+            <router-link class="menu-item" to="/" :class="{'active': currentPath.toString().indexOf('patient') >= 0}">
+                <span><i class="fa fa-user" style="font-size: 14px; margin-right: 3px; margin-bottom: 8px;"></i></span> Patient
+            </router-link>
         
-            <router-link class="menu-item" to="/2D">2D</router-link>
+            <router-link class="menu-item" to="/2D" :class="{'active': currentPath.toString().indexOf('2d') >= 0}">
+                <span><i class="fas fa-box" style="font-size: 15px; margin-right: 3px"></i></span> 2D
+            </router-link>
         
-            <router-link class="menu-item" to="/3D">3D</router-link>
+            <router-link class="menu-item" to="/3D" :class="{'active': currentPath.toString().indexOf('3d') >= 0}">
+                <span><i class="fab fa-unity"></i></span> 3D
+            </router-link>
         </div>
         <div class="user-info">
             <div class="user-avatar">
@@ -20,6 +26,19 @@
         </div>
     </section>
 </template>
+
+<script>
+export default {
+    data(){
+        return {
+            currentPath: "",
+        }
+    },
+    mounted(){
+        this.currentPath = this.$router.currentRoute.path
+    },
+}
+</script>
 
 <style scoped>
 .user-avatar img {
@@ -59,6 +78,11 @@
     background: rgb(249,142,0);
     background: linear-gradient(0deg, rgba(249,142,0,1) 0%, rgba(255,147,2,1) 35%, rgba(255,182,102,1) 100%);
 }
+.menu-item.active {
+    /* background: #ff9500; */
+    background: rgb(249,142,0);
+    background: linear-gradient(0deg, rgba(249,142,0,1) 0%, rgba(255,147,2,1) 35%, rgba(255,182,102,1) 100%);
+}
 /* .menu-item {
     width: 100px;
     background: var(--appWhite);
@@ -69,10 +93,13 @@
 .menu-item {
     border-top:1px solid #ff9500;
     border-bottom:1px solid #ff9500;
-    width: 100px;
+    min-width: 100px;
     text-align: center;
     padding: 5px 20px;
     font-size: 17px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .main-menu {
     display: inherit;

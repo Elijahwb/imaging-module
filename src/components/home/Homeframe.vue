@@ -36,10 +36,8 @@
                 </div>
             </Sidecontent>
             <Contentsection>
-                
-                <TimeserieRow :images="paranomas" />
-                <TimeserieRow :images="paranomas" />
-                <TimeserieRow :images="paranomas" />
+                <Submenu />
+                <slot />
             </Contentsection>
         </section>
     </section>
@@ -50,7 +48,7 @@ import Topbar from "../global/Topbar.vue";
 import Sidecontent from "../global/SideContent.vue";
 import Contentsection from "../global/ContentContainer.vue";
 import Patientcard from "./PatientCard.vue";
-import TimeserieRow from "./timeseries/Timeserie.vue"
+import Submenu from "./Submenu.vue";
 
 export default {
     components: {
@@ -58,18 +56,11 @@ export default {
         Sidecontent,
         Contentsection,
         Patientcard,
-        TimeserieRow,
+        Submenu,
     },
     data(){
         return {
             patients: [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21],
-            paranomas: [
-                "@/assets/xrays/1.jpeg",
-                "@/assets/xrays/2.jpeg",
-                "@/assets/xrays/3.jpeg",
-                "@/assets/xrays/4.jpeg",
-                "@/assets/xrays/5.jpeg",
-            ],
         }
     },
 }

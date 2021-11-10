@@ -15,4 +15,9 @@ export default {
   src: local("Mohave"),
    url(./fonts/Mohave/static/Mohave-Regular.ttf) format("truetype");
 }
+@font-face {
+  font-family: "Mohavebold";
+  src: local("Mohave"),
+   url(./fonts/Mohave/static/Mohave-Bold.ttf) format("truetype");
+}
 </style>

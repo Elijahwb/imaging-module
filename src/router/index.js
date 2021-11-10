@@ -8,6 +8,21 @@ const routes = [
         component: () => import("@/views/Home.vue")  
     },
     {
+        path: '/patient/modularity',
+        name: 'Patient Modularity',
+        component: () => import("@/views/Modularity.vue")  
+    },
+    {
+        path: '/patient/timeseries',
+        name: 'Patient Timeseries',
+        component: () => import("@/views/TimeSeries.vue")  
+    },
+    {
+        path: '/patient/studytemplate',
+        name: 'Patient Study Template',
+        component: () => import("@/views/Studytemplate.vue")  
+    },
+    {
         path: '*',
         redirect: {
           name: 'Home'
