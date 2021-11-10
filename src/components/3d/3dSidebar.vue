@@ -1,6 +1,6 @@
 <template>
 <div class="row">
-  <div class="col-3 side-bar">
+  <div class="col side-bar">
       <GeneralEditing/>
       <ViewPropertyEditing/>
       <EditingCard heading="Measurement">

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+  <g id="Drawing_1" data-name="Drawing 1" transform="translate(-161 -233)">
+    <path id="Drawing_1-2" data-name="Drawing 1" d="M4863-9574h-14a1,1,0,0,1-1-1v-14a1,1,0,0,1,1-1h14a1,1,0,0,1,1,1v14A1,1,0,0,1,4863-9574Zm-13.447-15.449a1,1,0,0,0-1,1v12.9a1,1,0,0,0,1,1h12.9a1,1,0,0,0,1-1v-12.9a1,1,0,0,0-1-1Z" transform="translate(-4685 9825)" fill="#c7beb7"/>
+    <g id="Rectangle_1935" data-name="Rectangle 1935" transform="translate(161 233)" fill="none" stroke="#707070" stroke-width="1" opacity="0.004">
+      <rect width="20" height="20" stroke="none"/>
+      <rect x="0.5" y="0.5" width="19" height="19" fill="none"/>
+    </g>
+  </g>
+</svg>

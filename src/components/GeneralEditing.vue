@@ -1,27 +1,33 @@
 <template>
   <EditingCard heading="General">
-    <!-- <div class="grid-container"> -->
-      <i class="fa fa-search" aria-hidden="true"></i>
-      <i class="fa fa-hand-rock-o fa-7x" aria-hidden="false"></i>
-      <i class="fa fa-meetup fa-lg" aria-hidden="true"></i>
-      <span style="font-size: 48px; color: Mediumslateblue;">
-         <i class="fas fa-camera fa-10x"></i>
-      </span>
-      <span style="font-size: 3rem;">
-         <i class="fa fa-camera"></i>
-      </span>
-    <!-- </div> -->
+      <div class="row">
+        <div class="col-4">
+          <SearchIcon/>
+        </div>
+       <div class="col-4">
+          <MenuIcon/>
+       </div>
+       <div class="col-4">
+          <SearchIcon/>
+       </div>
+       <div class="col-4">
+          <MenuIcon/>
+       </div>
+      </div>
   </EditingCard>
 </template>
 
 <script>
 import EditingCard from './EditingCard.vue'
-// import ImagingIcon from './ImagingIcon.vue'
+import SearchIcon from '@/assets/icons/General1.svg';
+import MenuIcon from '@/assets/icons/General2.svg';
+
 export default {
   name:'GeneralEditing',
   components:{
       EditingCard,
-    //   ImagingIcon
+    SearchIcon,
+    MenuIcon
   },
   methods:{
       onClicked(){

@@ -1,6 +1,6 @@
 <template>
   <div class="grid-container">
-    <label class="item1"><i :class="label" aria-hidden="true"></i></label>
+    <label class="item1"><slot></slot></label>
     <input type="range" min="0" max="100" step="1" :value="value" class="item2">
    </div>
 </template>

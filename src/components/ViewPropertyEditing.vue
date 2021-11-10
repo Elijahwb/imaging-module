@@ -1,9 +1,9 @@
 <template>
   <EditingCard heading="Viewer Property">
       <div class="row">
-          <Slider label="fa fa-sun-o"/>
-          <Slider label="fa fa-thermometer-empty"/>
-          <Slider label="fa fa-yoast"/>
+          <Slider><LightIcon></LightIcon></Slider>
+          <Slider><BrightnessIcon/></Slider>
+          <Slider><MeasurementIcon/></Slider>
           <div class="grid-container">
           <div class="col-6">
               <div class="form-check">
@@ -48,11 +48,17 @@
 <script>
 import EditingCard from './EditingCard.vue'
 import Slider from './global/RangeSlider.vue'
+import LightIcon from '@/assets/icons/Viewerproperty1.svg';
+import BrightnessIcon from '@/assets/icons/Viewerproperty2.svg';
+import MeasurementIcon from '@/assets/icons/Viewerproperty3.svg';
 export default {
   name:'ViewPropertyEditing',
   components:{
       EditingCard,
-      Slider
+      Slider,
+      LightIcon,
+      BrightnessIcon,
+      MeasurementIcon
   }
 }
 </script>

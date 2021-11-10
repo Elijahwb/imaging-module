@@ -1,37 +1,32 @@
 <template>
 <div class="row">
-  <div class="side-bar">
+  <div class="col side-bar">
       <GeneralEditing/>
       <ViewPropertyEditing/>
-      <EditingCard heading="Measurement">
-        Kasujja Muhammed
-        Kasujja Muhammed
-        Kasujja Muhammed
-      </EditingCard>
-      <EditingCard heading="Drawing">
-        Kasujja Muhammed
-      </EditingCard>
-      <EditingCard heading="Object">
-        Kasujja Muhammed
-        Kasujja Muhammed
-      </EditingCard>
+      <MeasurementEditing/>
+      <DrawingEditing/>
+      <ObjectEditing/>
       <TreatmentEditing />
   </div>
   </div>
 </template>
 
 <script>
-import EditingCard from '../EditingCard.vue'
 import  GeneralEditing from '../GeneralEditing.vue'
 import TreatmentEditing from '../TreatmentEditing.vue'
 import ViewPropertyEditing from '../ViewPropertyEditing.vue'
+import ObjectEditing from '../ObjectEditing.vue'
+import MeasurementEditing from '../MeasurementEditing.vue'
+import DrawingEditing from '../DrawingEditing.vue'
 export default {
   name:'SideBar',
   components:{
-      EditingCard,
       GeneralEditing,
       TreatmentEditing,
-      ViewPropertyEditing
+      ViewPropertyEditing,
+      ObjectEditing,
+      MeasurementEditing,
+      DrawingEditing
   }
 }
 </script>
