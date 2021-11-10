@@ -61,7 +61,8 @@ export default {
 }
 .patient-card-container.active {
     border: none;
-    border-radius: 8px;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
     background: rgb(41,146,137);
     background: linear-gradient(0deg, rgba(41,146,137,1) 0%, rgba(57,166,156,1) 35%, rgba(75,202,190,1) 100%);
 }
