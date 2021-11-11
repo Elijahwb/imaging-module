@@ -8,10 +8,13 @@
           <MenuIcon/>
        </div>
        <div class="col-4">
-          <SearchIcon/>
+          <General3/>
        </div>
        <div class="col-4">
-          <MenuIcon/>
+          <General4/>
+       </div>
+       <div class="col-4">
+          <General5/>
        </div>
       </div>
   </EditingCard>
@@ -21,13 +24,19 @@
 import EditingCard from './EditingCard.vue'
 import SearchIcon from '@/assets/icons/General1.svg';
 import MenuIcon from '@/assets/icons/General2.svg';
+import General3 from '@/assets/icons/General3.svg';
+import General4 from '@/assets/icons/General4.svg';
+import General5 from '@/assets/icons/General5.svg';
 
 export default {
   name:'GeneralEditing',
   components:{
       EditingCard,
     SearchIcon,
-    MenuIcon
+    MenuIcon,
+    General3,
+    General4,
+    General5
   },
   methods:{
       onClicked(){

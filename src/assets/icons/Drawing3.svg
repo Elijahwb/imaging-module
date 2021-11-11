@@ -1,9 +1,29 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #c7beb7;
+      }
+
+      .cls-2, .cls-4 {
+        fill: none;
+      }
+
+      .cls-2 {
+        stroke: #707070;
+        opacity: 0;
+      }
+
+      .cls-3 {
+        stroke: none;
+      }
+    </style>
+  </defs>
   <g id="Drawing_3" data-name="Drawing 3" transform="translate(-161 -305)">
-    <path id="Drawing_3-2" data-name="Drawing 3" d="M-4785.333,9911.741l16.853-13.7.515.531-16.927,13.823Z" transform="translate(4947.605 -9590.215)" fill="#c7beb7"/>
-    <g id="Rectangle_1935" data-name="Rectangle 1935" transform="translate(161 305)" fill="none" stroke="#707070" stroke-width="1" opacity="0">
-      <rect width="20" height="20" stroke="none"/>
-      <rect x="0.5" y="0.5" width="19" height="19" fill="none"/>
+    <path id="Drawing_3-2" data-name="Drawing 3" class="cls-1" d="M-4785.333,9914.482l20.224-16.443,1.02,1.028-20.312,16.588Z" transform="translate(4947.86 -9589.651)"/>
+    <g id="Rectangle_1935" data-name="Rectangle 1935" class="cls-2" transform="translate(161 305)">
+      <rect class="cls-3" width="24" height="24"/>
+      <rect class="cls-4" x="0.5" y="0.5" width="23" height="23"/>
     </g>
   </g>
 </svg>
