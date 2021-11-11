@@ -1,10 +1,15 @@
 <template>
     <Frame>
-        <div class="study-template-container">
-            <StudyTemplate />
-            <StudyTemplate />
-            <StudyTemplate />
-            <StudyTemplate />
+        <div class="study-template-container fullscreen">
+            <!-- <StudyTemplate imageType="Panorama" :images="images" :openFullScreen="openFullScreen" v-if="!isFullScreen || (isFullScreen && activeZoomSection == 'Panorama')" />
+            <StudyTemplate imageType="CT" :images="images2" :openFullScreen="openFullScreen" v-if="!isFullScreen || (isFullScreen && activeZoomSection == 'CT')" />
+            <StudyTemplate imageType="IO Sensor" :images="images3" :openFullScreen="openFullScreen" v-if="!isFullScreen || (isFullScreen && activeZoomSection == 'IO Sensor')" />
+            <StudyTemplate imageType="IO Camera" :images="images" :openFullScreen="openFullScreen" v-if="!isFullScreen || (isFullScreen && activeZoomSection == 'IO Camera')" /> -->
+
+            <StudyTemplate imageType="Panorama" :images="images" />
+            <StudyTemplate imageType="CT" :images="images2" />
+            <StudyTemplate imageType="IO Sensor" :images="images3" />
+            <StudyTemplate imageType="IO Camera" :images="images" />
         </div>
     </Frame>
 </template>
@@ -19,7 +24,9 @@ export default {
     },
     data(){
         return {
-            paranomas: [
+            isFullScreen: false,
+            activeZoomSection: "",
+            images: [
                 {
                     name: "1.jpeg",
                     type: "Panaromo"
@@ -41,7 +48,7 @@ export default {
                     type: "CT"
                 },
             ],
-            paranomas2: [
+            images2: [
                 {
                     name: "6.jpeg",
                     type: "Panaromo"
@@ -63,7 +70,7 @@ export default {
                     type: "CT"
                 },
             ],
-            paranomas3: [
+            images3: [
                 {
                     name: "10.jpeg",
                     type: "Panaromo"
@@ -87,6 +94,21 @@ export default {
             ],
         }
     },
+    methods: {
+        openFullScreen(action, activeSection){
+            if(action == "open") {
+                this.isFullScreen = true
+                this.activeZoomSection = activeSection
+            }
+            else {
+                this.isFullScreen = false
+                this.activeZoomSection = ""
+            }
+
+            console.log(`Is zoom active: ${this.isFullScreen}`)
+            console.log(`Zoomed in section: ${this.activeZoomSection}`)
+        }
+    }
 }
 </script>
 
@@ -103,7 +125,11 @@ export default {
     border-radius: 2px;
     border: 3px solid var(--highlight);
 }
+.study-template-container.fullscreen {
+    overflow-y: hidden;
+}
 .study-template-container {
+    position: relative;
     height: calc(100% - 60px);
     overflow-y: auto;
     overflow-x: hidden;
@@ -111,5 +137,6 @@ export default {
     row-gap: 10px;
     justify-content: space-between;
     flex-wrap: wrap;
+    /* background: var(--mainBg); */
 }
 </style>

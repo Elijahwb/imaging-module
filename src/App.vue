@@ -1,4 +1,8 @@
 <template>
+  <!-- <transition name="router-anim" enter-active-class="animate__animated animate__slideInLeft" leave-active-class="animate__animated animate__slideInLeft">
+    <router-view />
+  </transition> -->
+  
   <router-view />
 </template>
 
