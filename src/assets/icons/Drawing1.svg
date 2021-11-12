@@ -1,9 +1,29 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #c7beb7;
+      }
+
+      .cls-2, .cls-4 {
+        fill: none;
+      }
+
+      .cls-2 {
+        stroke: #707070;
+        opacity: 0.004;
+      }
+
+      .cls-3 {
+        stroke: none;
+      }
+    </style>
+  </defs>
   <g id="Drawing_1" data-name="Drawing 1" transform="translate(-161 -233)">
-    <path id="Drawing_1-2" data-name="Drawing 1" d="M4863-9574h-14a1,1,0,0,1-1-1v-14a1,1,0,0,1,1-1h14a1,1,0,0,1,1,1v14A1,1,0,0,1,4863-9574Zm-13.447-15.449a1,1,0,0,0-1,1v12.9a1,1,0,0,0,1,1h12.9a1,1,0,0,0,1-1v-12.9a1,1,0,0,0-1-1Z" transform="translate(-4685 9825)" fill="#c7beb7"/>
-    <g id="Rectangle_1935" data-name="Rectangle 1935" transform="translate(161 233)" fill="none" stroke="#707070" stroke-width="1" opacity="0.004">
-      <rect width="20" height="20" stroke="none"/>
-      <rect x="0.5" y="0.5" width="19" height="19" fill="none"/>
+    <path id="Drawing_1-2" data-name="Drawing 1" class="cls-1" d="M18.2,19.2H1a1,1,0,0,1-1-1V1A1,1,0,0,1,1,0H18.2a1,1,0,0,1,1,1V18.2A1,1,0,0,1,18.2,19.2ZM2.4,1.119a1.2,1.2,0,0,0-1.2,1.2V16.862a1.2,1.2,0,0,0,1.2,1.2H16.881a1.2,1.2,0,0,0,1.2-1.2V2.319a1.2,1.2,0,0,0-1.2-1.2Z" transform="translate(163.401 235.4)"/>
+    <g id="Rectangle_1935" data-name="Rectangle 1935" class="cls-2" transform="translate(161 233)">
+      <rect class="cls-3" width="24" height="24"/>
+      <rect class="cls-4" x="0.5" y="0.5" width="23" height="23"/>
     </g>
   </g>
 </svg>

@@ -1,9 +1,29 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #c7beb7;
+      }
+
+      .cls-2, .cls-4 {
+        fill: none;
+      }
+
+      .cls-2 {
+        stroke: #707070;
+        opacity: 0;
+      }
+
+      .cls-3 {
+        stroke: none;
+      }
+    </style>
+  </defs>
   <g id="Drawing_2" data-name="Drawing 2" transform="translate(-161 -479)">
-    <path id="Drawing_2-2" data-name="Drawing 2" d="M-4776.984,9898.261v-2.689h14.314v2.689s0-1.2-1.782-1.6a17.774,17.774,0,0,0-4.8,0v12.594a1.842,1.842,0,0,0,.567,1.11,3.984,3.984,0,0,0,1.07.654h-4.875a6.972,6.972,0,0,0,1.4-.769,1.232,1.232,0,0,0,.5-.786v-12.8a16.422,16.422,0,0,0-4.589,0A2.228,2.228,0,0,0-4776.984,9898.261Z" transform="translate(4940.828 -9414.295)" fill="#c7beb7"/>
-    <g id="Rectangle_1935" data-name="Rectangle 1935" transform="translate(161 479)" fill="none" stroke="#707070" stroke-width="1" opacity="0">
-      <rect width="20" height="20" stroke="none"/>
-      <rect x="0.5" y="0.5" width="19" height="19" fill="none"/>
+    <path id="Drawing_2-2" data-name="Drawing 2" class="cls-1" d="M-4776.984,9899.405v-3.834h17.177v3.834a2.659,2.659,0,0,0-2.138-2.525,16.981,16.981,0,0,0-5.186,0v15.112a2.209,2.209,0,0,0,.68,1.332,4.786,4.786,0,0,0,1.284.785h-6.765a8.388,8.388,0,0,0,1.675-.922,1.481,1.481,0,0,0,.6-.943V9896.88a17.176,17.176,0,0,0-5.165,0A3.069,3.069,0,0,0-4776.984,9899.405Z" transform="translate(4941.396 -9413.84)"/>
+    <g id="Rectangle_1935" data-name="Rectangle 1935" class="cls-2" transform="translate(161 479)">
+      <rect class="cls-3" width="24" height="24"/>
+      <rect class="cls-4" x="0.5" y="0.5" width="23" height="23"/>
     </g>
   </g>
 </svg>

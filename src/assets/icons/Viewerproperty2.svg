@@ -1,12 +1,32 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <style>
+      .cls-1, .cls-3 {
+        fill: none;
+      }
+
+      .cls-2 {
+        fill: #c7beb7;
+      }
+
+      .cls-3 {
+        stroke: #707070;
+        opacity: 0;
+      }
+
+      .cls-4 {
+        stroke: none;
+      }
+    </style>
+  </defs>
   <g id="Viewer_property_2" data-name="Viewer property 2" transform="translate(-161 -583)">
-    <g id="Viewer_property_2-2" data-name="Viewer property 2" transform="translate(161.229 583)">
-      <path id="Path_1130" data-name="Path 1130" d="M0,0H19.54V19.54H0Z" fill="none"/>
-      <path id="Path_1131" data-name="Path 1131" d="M10.142,18.283a8.142,8.142,0,1,1,8.142-8.142A8.142,8.142,0,0,1,10.142,18.283Zm0-.628a7.392,7.392,0,0,0,7.513-7.513C17.63,5.3,14.334,2.652,10.142,2.628s-7.37,2.685-7.513,7.513A7.335,7.335,0,0,0,10.142,17.655Zm0-2.628V5.257a4.885,4.885,0,1,1,0,9.77Z" transform="translate(-0.372 -0.372)" fill="#c7beb7"/>
+    <g id="Viewer_property_2-2" data-name="Viewer property 2" transform="translate(161.275 583)">
+      <path id="Path_1130" data-name="Path 1130" class="cls-1" d="M0,0H23.448V23.448H0Z"/>
+      <path id="Path_1131" data-name="Path 1131" class="cls-2" d="M11.77,21.54a9.77,9.77,0,1,1,9.77-9.77A9.77,9.77,0,0,1,11.77,21.54Zm0-1.117a8.787,8.787,0,0,0,8.655-8.653A9.038,9.038,0,0,0,11.77,3.11c-4.672-.095-8.739,4.319-8.7,8.66A9.121,9.121,0,0,0,11.77,20.423Zm0-2.791V5.908a5.862,5.862,0,0,1,0,11.724Z" transform="translate(-0.046 -0.046)"/>
     </g>
-    <g id="Rectangle_1935" data-name="Rectangle 1935" transform="translate(161 583)" fill="none" stroke="#707070" stroke-width="1" opacity="0">
-      <rect width="20" height="20" stroke="none"/>
-      <rect x="0.5" y="0.5" width="19" height="19" fill="none"/>
+    <g id="Rectangle_1935" data-name="Rectangle 1935" class="cls-3" transform="translate(161 583)">
+      <rect class="cls-4" width="24" height="24"/>
+      <rect class="cls-1" x="0.5" y="0.5" width="23" height="23"/>
     </g>
   </g>
 </svg>

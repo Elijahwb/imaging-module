@@ -3,31 +3,60 @@
       <!-- <div class="col-12 editing-container"> -->
         <div class="col-12 editing-container">
           <div class="row">
-            <div class="col-6 current-image">
-            Images 1
+            <div class="col-6 current-image align-items-center">
+            <img src="@/assets/xrays/3.jpeg" alt="image" width="100%" height="100%" class="image-container">
+            <div class="d-flex justify-content-between">
+            <ImageFilter/>
+            <TimestampFilter/>
+            </div>
          </div>
-      <div class="col-6 current-image">
-         Images 2
+      <div class="col-6 current-image align-items-center">
+         <img src="@/assets/xrays/2.jpeg" alt="image" width="100%" height="100%" class="image-container">
+         <Slider/>
       </div>
           </div>
         </div>
-        <!-- <div class="col-6 ">
-          Image Right
-        </div> -->
-         <!-- Editing
-      </div> -->
+        
       <div class="col-6 image-list">
-         Images List - 1
+         <CroppedImages :images="cropped"/>
       </div>
       <div class="col-6 image-list">
-         Images List - 2
+         <CroppedImages :images="paranomas"/>
       </div>
   </div>
 </template>
 
 <script>
+import CroppedImages from '../global/CroppedImages.vue'
+import ImageFilter from './ImageFilter.vue'
+import TimestampFilter from './TimestampFilter.vue'
+import Slider from '../global/RangeSlider.vue'
 export default {
-  name:'2dContentBody'
+  name:'2dContentBody',
+  components:{
+    CroppedImages,
+    ImageFilter,
+    TimestampFilter,
+    Slider
+  },
+  data(){
+    return {
+      cropped: [
+                "5.jpeg",
+                "4.jpeg",
+                "3.jpeg",
+                "2.jpeg",
+                "1.jpeg",
+            ],
+            paranomas: [
+                "1.jpeg",
+                "2.jpeg",
+                "3.jpeg",
+                "4.jpeg",
+                "5.jpeg",
+            ],
+    }
+  }
 }
 </script>
 
@@ -43,7 +72,7 @@ export default {
   border: solid 1px;
 }
 .current-image{
-  border: solid 1px;
   height: 50vh;
+  text-align: center;
 }
 </style>

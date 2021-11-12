@@ -18,13 +18,6 @@ export default {
 </script>
 
 <style scoped>
-i {
-  font-size: 19px;
-  color: #0088FF !important;
-}
-a {
-  color: #0088FF !important;
-}
 .card-head {
   color: #000000;
   padding: 8px 8px;

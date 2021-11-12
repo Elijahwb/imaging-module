@@ -4,16 +4,18 @@
       <GeneralEditing/>
       <ViewPropertyEditing/>
       <EditingCard heading="Measurement">
-        Kasujja Muhammed
-        Kasujja Muhammed
-        Kasujja Muhammed
+       Measurement 1
+       Measurement 2
+       Measurement 3
       </EditingCard>
       <EditingCard heading="Drawing">
-        Kasujja Muhammed
+        Drawing 1
+        Drawing 2
+        Drawing 3
       </EditingCard>
       <EditingCard heading="Object">
-        Kasujja Muhammed
-        Kasujja Muhammed
+        Object 1
+        Object 2
       </EditingCard>
       <TreatmentEditing />
   </div>

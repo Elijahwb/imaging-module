@@ -1,10 +1,11 @@
 <template>
   <EditingCard heading="Viewer Property">
       <div class="row">
+        <!-- <CustomRange/> -->
           <Slider><LightIcon></LightIcon></Slider>
           <Slider><BrightnessIcon/></Slider>
           <Slider><MeasurementIcon/></Slider>
-          <div class="grid-container">
+          <!-- <div class="grid-container"> -->
           <div class="col-6">
               <div class="form-check">
               <input class="form-check-input" type="checkbox" value="" id="flexCheckSharpen">
@@ -21,8 +22,8 @@
   </label>
           </div>
           </div>
-          </div>
-          <div class="grid-container">
+          <!-- </div> -->
+          <!-- <div class="grid-container"> -->
            <div class="col-6">
               <div class="form-check">
               <input class="form-check-input" type="checkbox" value="" id="flexCheckUnsharp">
@@ -40,7 +41,7 @@
   </label>
           </div>
           </div>
-          </div>
+          <!-- </div> -->
       </div>
   </EditingCard>
 </template>
@@ -51,6 +52,7 @@ import Slider from './global/RangeSlider.vue'
 import LightIcon from '@/assets/icons/Viewerproperty1.svg';
 import BrightnessIcon from '@/assets/icons/Viewerproperty2.svg';
 import MeasurementIcon from '@/assets/icons/Viewerproperty3.svg';
+// import CustomRange from './global/CustomRange.vue'
 export default {
   name:'ViewPropertyEditing',
   components:{
@@ -58,7 +60,8 @@ export default {
       Slider,
       LightIcon,
       BrightnessIcon,
-      MeasurementIcon
+      MeasurementIcon,
+      // CustomRange
   }
 }
 </script>
