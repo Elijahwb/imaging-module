@@ -1,4 +1,9 @@
 <template>
+<div class="row">
+  <div class="col-1">
+  <div class="icon"><span style="color:#4bcabf"><i class="fa fa-dropbox" aria-hidden="true"></i></span></div>
+  </div>
+  <div class="col-11">
   <div class="d-flex justify-content-around list-items">
     <p class="item first-item" :class="itemSelected" @click="selected('all')">All</p>
     <p class="item option-selected"  @click="selected('pano')">Pano</p>
@@ -8,6 +13,9 @@
     <p class="item" :class="itemSelected" @click="selected('photo')">Photo</p>
     <p class="item last-item">Capture</p>
   </div>
+  
+  </div>
+  </div> 
 </template>
 
 <script>
@@ -90,5 +98,14 @@ export default {
 .last-item.option-selected{
   border-top-right-radius: 30px;
   border-bottom-right-radius: 30px;
+}
+.icon{
+  margin-top: 10px;
+  width: 30px;
+  height: 30px;
+  border-radius: 20px;
+  background-color: white;
+  text-align: center;
+  justify-content: center;
 }
 </style>

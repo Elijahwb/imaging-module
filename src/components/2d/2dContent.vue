@@ -12,7 +12,11 @@
          </div>
       <div class="col-6 current-image align-items-center">
          <img src="@/assets/xrays/2.jpeg" alt="image" width="100%" height="100%" class="image-container">
-         <Slider/>
+         <div class="row">
+           <div class="col-12">
+             <Slider/>
+           </div>
+         </div>
       </div>
           </div>
         </div>
