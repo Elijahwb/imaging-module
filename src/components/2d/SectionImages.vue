@@ -18,13 +18,13 @@
 </template>
 
 <script>
-// import CroppedImages from '../global/CroppedImages.vue'
+import CroppedImages from '../global/CroppedImages.vue'
 import ImageFilter from './ImageFilter.vue'
 import TimestampFilter from './TimestampFilter.vue'
 export default {
   name:'SectionImages',
   components:{
-    // CroppedImages,
+    CroppedImages,
     ImageFilter,
     TimestampFilter,
   },
@@ -78,7 +78,7 @@ export default {
 }
 .container-heading {
     font-size: 15px;
-    padding: 10px 10px 10px 10px;
+    padding: 10px;
     display: flex;
     justify-content: space-between;
 }
@@ -108,10 +108,13 @@ export default {
    /* background-color: darkgray; */
    height: calc(30%);  
    display: flex;
+   flex-flow: column;
 }
 .menu-bar{
     display: flex;
     justify-content: space-between;
+    margin: 0 8px 6px 8px;
+    height: 50px;
 }
 
 </style>

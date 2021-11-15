@@ -8,7 +8,7 @@
             <img src="@/assets/xrays/5.jpeg" alt="" class="image-container">
         </div>
         <div class="image-list">
-            <div class="col"><Slider/></div>
+            <div class="col slider"><Slider/></div>
           <CroppedImages :images="paranomas"/>
         </div>
   </div>
@@ -16,12 +16,12 @@
 
 <script>
 import Slider from '../global/RangeSlider.vue'
-// import CroppedImages from '../global/CroppedImages.vue'
+import CroppedImages from '../global/CroppedImages.vue'
 export default {
   name:'SectionVideos',
   components:{
     Slider,
-    // CroppedImages
+    CroppedImages
   },
   data(){
     return {
@@ -102,5 +102,9 @@ export default {
    width: 100%;
    height: calc(30%);  
    display: flex;
+   flex-flow: column;
+}
+.slider{
+  height: 50px;
 }
 </style>

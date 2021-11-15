@@ -34,9 +34,9 @@ export default {
     padding: 5px 10px;
 }
 .image {
-    height: 18vw;
+    height: 13vw;
     margin-right: 10px;
-    flex-basis: 18vw;
+    flex-basis: 13vw;
     flex-grow: 0;
     flex-shrink: 0;
 }
