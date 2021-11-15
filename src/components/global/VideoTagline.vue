@@ -1,40 +1,19 @@
 <template>
-  <div class="images-row">
-    <div
-      class="image"
-      v-for="(img, index) in images"
-      :key="index"
-      @click="onSelect(index)"
-    >
-      <div class="image-number">{{ index + 1 }}/{{ images.length }}</div>
-      <div class="image-source">
-        <img :src="require('@/assets/xrays/' + img)" alt="img" />
-      </div>
-      <div
-        class="image-footer"
-        :class="[isActive == index ? 'option-selected' : 'option-unselected']"
-      >
-        21.11.05
+  <section>
+    <div class="images-row">
+      <div class="image" v-for="(img, index) in images" :key="index">
+        <div class="image-source">
+          <img :src="require('@/assets/xrays/' + img)" alt="img" />
+        </div>
       </div>
     </div>
-  </div>
+  </section>
 </template>
 
 <script>
 export default {
   props: {
     images: Array,
-    showHeader: { type: Boolean, default: false },
-  },
-  data() {
-    return {
-      isActive: 0,
-    };
-  },
-  methods: {
-    onSelect(index) {
-      this.isActive = index;
-    },
   },
 };
 </script>
@@ -46,7 +25,7 @@ export default {
   object-fit: cover;
 }
 .image .image-source {
-  height: calc(100% - 70px);
+  height: calc(100% - 40px);
   margin-bottom: 10px;
   background: var(--mainBg);
 }
@@ -95,19 +74,5 @@ export default {
   padding-left: 2px;
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
-}
-
-.option-selected {
-  display: inherit;
-  color: var(--appWhite);
-  background-color: var(--highlight);
-  border-radius: 1px;
-}
-
-.option-unselected {
-  display: inherit;
-  color: var(--highlightTwo);
-  background-color: var(--appWhite);
-  border-radius: 1px;
 }
 </style>

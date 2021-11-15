@@ -1,77 +1,77 @@
 <template>
   <div class="row">
-      <!-- <div class="col-12 editing-container"> -->
-        <div class="col-12 editing-container">
-          <div class="row">
-            <div class="col-6 current-image align-items-center">
-            <img src="@/assets/xrays/3.jpeg" alt="image" width="100%" height="100%" class="image-container">
-            <div class="d-flex justify-content-between">
-            <ImageFilter/>
-            <TimestampFilter/>
-            </div>
-         </div>
-      <div class="col-6 current-image align-items-center">
-         <img src="@/assets/xrays/2.jpeg" alt="image" width="100%" height="100%" class="image-container">
-         <Slider/>
-      </div>
+    <!-- <div class="col-12 editing-container"> -->
+    <div class="col-12 editing-container">
+      <div class="row">
+        <div class="col-6 current-image align-items-center">
+          <img
+            src="@/assets/xrays/3.jpeg"
+            alt="image"
+            width="100%"
+            height="100%"
+            class="image-container"
+          />
+          <div class="d-flex justify-content-between">
+            <ImageFilter />
+            <TimestampFilter />
           </div>
         </div>
-        
-      <div class="col-6 image-list">
-         <CroppedImages :images="cropped"/>
+        <div class="col-6 current-image align-items-center">
+          <img
+            src="@/assets/xrays/2.jpeg"
+            alt="image"
+            width="100%"
+            height="100%"
+            class="image-container"
+          />
+          <Slider />
+        </div>
       </div>
-      <div class="col-6 image-list">
-         <CroppedImages :images="paranomas"/>
-      </div>
+    </div>
+
+    <div class="col-6 image-list">
+      <CroppedImages :images="cropped" />
+    </div>
+    <div class="col-6 image-list">
+      <CroppedImages :images="paranomas" />
+    </div>
   </div>
 </template>
 
 <script>
-import CroppedImages from '../global/CroppedImages.vue'
-import ImageFilter from './ImageFilter.vue'
-import TimestampFilter from './TimestampFilter.vue'
-import Slider from '../global/RangeSlider.vue'
+import CroppedImages from "../global/CroppedImages.vue";
+import ImageFilter from "./ImageFilter.vue";
+import TimestampFilter from "./TimestampFilter.vue";
+import Slider from "../global/RangeSlider.vue";
 export default {
-  name:'2dContentBody',
-  components:{
+  name: "2dContentBody",
+  components: {
     CroppedImages,
     ImageFilter,
     TimestampFilter,
-    Slider
+    Slider,
   },
-  data(){
+  data() {
     return {
-      cropped: [
-                "5.jpeg",
-                "4.jpeg",
-                "3.jpeg",
-                "2.jpeg",
-                "1.jpeg",
-            ],
-            paranomas: [
-                "1.jpeg",
-                "2.jpeg",
-                "3.jpeg",
-                "4.jpeg",
-                "5.jpeg",
-            ],
-    }
-  }
-}
+      cropped: ["5.jpeg", "4.jpeg", "3.jpeg", "2.jpeg", "1.jpeg"],
+      paranomas: ["1.jpeg", "2.jpeg", "3.jpeg", "4.jpeg", "5.jpeg"],
+    };
+  },
+};
 </script>
 
 <style scoped>
-.editing-container{
+.editing-container {
   height: calc(100vh - var(--topBarHeight) - 400px);
   width: calc(100vw - 330px);
   border: solid 1px;
   margin-bottom: 8px;
 }
-.image-list{
+.image-list {
   height: 300px;
   border: solid 1px;
 }
-.current-image{
+.current-image {
   height: 50vh;
   text-align: center;
 }
