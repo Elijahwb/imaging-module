@@ -3,14 +3,10 @@
         <Topbar />
         <section class="sections">
             <Sidecontent>
-                <!-- <div class="container"> -->
-                    <SideBar/>
-                <!-- </div> -->
+                <SideBar/>
             </Sidecontent>
             <Contentsection>
-                <div class="container">
-                   <ContentBody/>
-                </div>
+                <ContentBody/>
             </Contentsection>
         </section>
     </section>
@@ -29,19 +25,12 @@ export default {
         Sidecontent,
         Contentsection,
         SideBar,
-        ContentBody
+        ContentBody,
     }
 }
 </script>
 
 <style scoped>
-.container {
-    height: 100%;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 .sections {
     display: flex;
     justify-content: space-between;

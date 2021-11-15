@@ -4,7 +4,7 @@
   <div class="row">
       <!-- <div class="col-12 editing-container"> -->
         <div class="col-12 editing-container" style="background-image">
-          <img src="@/assets/xrays/4.jpeg" alt="image" width="100%" height="100%" class="image-container">
+          <img src="@/assets/xrays/7.jpeg" alt="image" width="100%" height="100%" class="image-container">
             
         </div>
       <div class="col-12 image-list">
