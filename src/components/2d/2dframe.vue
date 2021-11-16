@@ -34,11 +34,14 @@ export default {
 .sections {
   display: flex;
   justify-content: space-between;
+  width: calc(100% - 80px);
+  margin-left: 80px;
   margin-top: 10px;
   height: calc(100vh - var(--topBarHeight) - 50px);
 }
 .app-container {
-  font-family: "Mohave";
+  /* font-family: "Mohave"; */
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   padding: 0 10px;
 }
 </style>
