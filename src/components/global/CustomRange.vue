@@ -1,14 +1,14 @@
 <template>
   <div>
-      <label for="customRange1">Basic range</label>
-<input type="range" class="custom-range" id="customRange1">
+    <label for="customRange1">Basic range</label>
+    <input type="range" class="custom-range" id="customRange1" />
   </div>
 </template>
 
 <script>
 export default {
- name:'CustomRange'
-}
+  name: "CustomRange",
+};
 </script>
 
 <style lang='scss'>
@@ -24,9 +24,15 @@ export default {
 
     // Pseudo-elements must be split across multiple rulesets to have an affect.
     // No box-shadow() mixin for focus accessibility.
-    &::-webkit-slider-thumb { box-shadow: $custom-range-thumb-focus-box-shadow; }
-    &::-moz-range-thumb     { box-shadow: $custom-range-thumb-focus-box-shadow; }
-    &::-ms-thumb            { box-shadow: $custom-range-thumb-focus-box-shadow; }
+    &::-webkit-slider-thumb {
+      box-shadow: $custom-range-thumb-focus-box-shadow;
+    }
+    &::-moz-range-thumb {
+      box-shadow: $custom-range-thumb-focus-box-shadow;
+    }
+    &::-ms-thumb {
+      box-shadow: $custom-range-thumb-focus-box-shadow;
+    }
   }
 
   &::-moz-focus-outer {
@@ -36,7 +42,9 @@ export default {
   &::-webkit-slider-thumb {
     width: $custom-range-thumb-width;
     height: $custom-range-thumb-height;
-    margin-top: (($custom-range-track-height - $custom-range-thumb-height) / 2); // Webkit specific
+    margin-top: (
+      ($custom-range-track-height - $custom-range-thumb-height) / 2
+    ); // Webkit specific
     @include gradient-bg($custom-range-thumb-bg);
     border: $custom-range-thumb-border;
     @include border-radius($custom-range-thumb-border-radius);
@@ -91,7 +99,7 @@ export default {
     height: $custom-range-thumb-height;
     margin-top: 0; // Edge specific
     margin-right: $custom-range-thumb-focus-box-shadow-width; // Workaround that overflowed box-shadow is hidden.
-    margin-left: $custom-range-thumb-focus-box-shadow-width;  // Workaround that overflowed box-shadow is hidden.
+    margin-left: $custom-range-thumb-focus-box-shadow-width; // Workaround that overflowed box-shadow is hidden.
     @include gradient-bg($custom-range-thumb-bg);
     border: $custom-range-thumb-border;
     @include border-radius($custom-range-thumb-border-radius);
@@ -111,7 +119,7 @@ export default {
     cursor: $custom-range-track-cursor;
     background-color: transparent;
     border-color: transparent;
-    border-width: ($custom-range-thumb-height * .5);
+    border-width: ($custom-range-thumb-height * 0.5);
     @include box-shadow($custom-range-track-box-shadow);
   }
 

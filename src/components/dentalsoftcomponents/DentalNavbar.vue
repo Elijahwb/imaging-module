@@ -5,10 +5,18 @@
   <div class="header container-fluid">
     <div class="header-content">
       <nav class="navbar navbar-expand">
-        <div class="collapse navbar-collapse  justify-content-between top-header mt-5 ml-0">
+        <div
+          class="
+            collapse
+            navbar-collapse
+            justify-content-between
+            top-header
+            mt-5
+            ml-0
+          "
+        >
           <div class="header-left">
-            <div class="dashboard_bar ">
-            </div>
+            <div class="dashboard_bar"></div>
           </div>
 
           <ul class="navbar-nav header-right">
@@ -258,11 +266,7 @@
                   <span class="text-black">{{ name }}.</span>
                   <p class="fs-12 mb-0">Admin</p>
                 </div>
-                <img
-                :src=image
-                  alt="image"
-                  width="20"
-                />
+                <img :src="image" alt="image" width="20" />
               </a>
               <div
                 class="dropdown-menu dropdown-menu-right"
@@ -274,7 +278,7 @@
                 </a>
 
                 <a href="/logout" class="dropdown-item ai-icon">
-                 <i class="fa fa-sign-out"></i>
+                  <i class="fa fa-sign-out"></i>
                   <span class="ml-2">Logout </span>
                 </a>
               </div>
@@ -288,11 +292,12 @@
 
 <script>
 // const token = localStorage.getItem('user');
-const url = 'https://teachingandlearning.schulich.yorku.ca/wp-content/uploads/2019/10/avatar6.png';
+const url =
+  "https://teachingandlearning.schulich.yorku.ca/wp-content/uploads/2019/10/avatar6.png";
 export default {
   data() {
     return {
-      name: 'user',
+      name: "user",
       image: url,
     };
   },
@@ -308,16 +313,16 @@ export default {
   /* display: flex; */
   z-index: 1;
 }
-.header{
+.header {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   /* height: 130px; */
-  top:-20px;
+  top: -20px;
   position: fixed;
   height: 120px;
 }
-.header-content{
+.header-content {
   margin-left: -210px;
-  display:flex !important;
+  display: flex !important;
   justify-content: space-between !important;
 }
 .header {
@@ -328,8 +333,7 @@ export default {
   position: absolute;
   left: -40px;
 }
-.search-div{
+.search-div {
   margin-left: -20px;
 }
-
 </style>

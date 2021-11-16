@@ -1,20 +1,19 @@
 <template>
   <div class="card-container">
-      <div class="card-head">{{heading}}</div>
-      <div class="card-details">
-        <slot></slot>
-      </div>
+    <div class="card-head">{{ heading }}</div>
+    <div class="card-details">
+      <slot></slot>
     </div>
+  </div>
 </template>
 
 <script>
 export default {
-    name:'EditingCard',
-    props:{
-      heading:String
-    }
-
-}
+  name: "EditingCard",
+  props: {
+    heading: String,
+  },
+};
 </script>
 
 <style scoped>
@@ -22,7 +21,8 @@ export default {
   color: #000000;
   padding: 8px 8px;
   font-size: 14px;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 .metric {
   font-size: 24px;
@@ -42,7 +42,7 @@ export default {
   background: #e6cbb5;
   /* padding: 10px 15px; */
   border-radius: 8px;
-  box-shadow: 5px 5px 10px rgba(0,0,0,.05);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.05);
   margin: 5px 8px 10px 5px;
 }
 </style>> 
