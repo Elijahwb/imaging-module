@@ -3,6 +3,14 @@
     --sectionBg: #1d2125;
     --contrastBg: #131313;
     --contentsBg: #1e1e1e;
+
+    --dsMainBg: #eeeeee;
+    --dsSectionBg: #fff;
+    --dsComponentHighlight: #eeeeee;
+    --dsColor: #000000;
+    --dsHighlight: #FF9F0F;
+    --dsBrandColor: #FF782E;
+
     --highlight: #3cb8aa;
     --highlightOne: #4bcabf;
     --highlightTwo: #2b9087;
@@ -41,8 +49,8 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    color: var(--appWhite);
-    background: var(--mainBg);
+    color: var(--dsColor);
+    background: var(--dsMainBg);
     font-family: "Roboto Mono", monospace;
     scroll-behavior: smooth;
 }

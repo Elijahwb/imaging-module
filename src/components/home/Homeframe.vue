@@ -1,5 +1,6 @@
 <template>
     <section class="app-container">
+        <Sidebar />
         <Topbar />
         <section class="sections">
             <Sidecontent>
@@ -44,6 +45,7 @@
 </template>
 
 <script>
+import Sidebar from "@/components/global/Sidebar.vue"
 import Topbar from "../global/Topbar.vue";
 import Sidecontent from "../global/SideContent.vue";
 import Contentsection from "../global/ContentContainer.vue";
@@ -57,6 +59,7 @@ export default {
         Contentsection,
         Patientcard,
         Submenu,
+        Sidebar,
     },
     data(){
         return {
@@ -68,7 +71,7 @@ export default {
 
 <style scoped>
 .patients-list {
-    height: calc(100% - 40px);
+    height: calc(100% - 25px);
     overflow-y: auto;
     scrollbar-color: var(--thumbBG) var(--scrollbarBG);
 }
@@ -82,15 +85,17 @@ export default {
 .patients-list::-webkit-scrollbar-thumb {
     background-color: transparent;
     border-radius: 2px;
-    border: 3px solid var(--highlight);
+    /* border: 3px solid var(--highlight); */
+    border: 3px solid var(--dsBrandColor);
 }
 .patients-heading {
     margin-bottom: 10px;
+    font-weight: 600;
 }
 .patients-container {
     margin-top: 20px;
-    background: var(--componentHighlight);
-    height: calc(100% - 150px);
+    /* background: var(--dsComponentHighlight); */
+    height: calc(100% - 130px);
     border-radius: 8px;
     padding: 10px;
     overflow-y: hidden;
@@ -114,12 +119,13 @@ export default {
     cursor: pointer;
 }
 .filter-item {
-    background: var(--componentHighlight);
-    border-radius: 10px;
+    /* background: var(--componentHighlight); */
+    border-radius: 6px;
     width: 50px;
     text-align: center;
     margin-right: 8px;
     padding: 2px 5px;
+    box-shadow: 5px 5px 10px rgba(0,0,0,.1), -5px -5px 10px rgba(0,0,0,.1);
 }
 .filter-items {
     display: inherit;
@@ -143,7 +149,18 @@ export default {
     justify-content: center;
     font-size: 16px;
     padding-right: 5px;
-    color: var(--highlight);
+    color: var(--dsBrandColor);
+}
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #5e5e5e !important;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #5e5e5e !important;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: #5e5e5e !important;
 }
 .search-patients-container input {
     height: 88% !important;
@@ -155,18 +172,23 @@ export default {
     border: none;
     outline: none;
     caret-color: var(--appWhite);
-    color: var(--appWhite);
+    /* color: var(--appWhite); */
+    /* color: var(--dsColor); */
+    color: #5e5e5e;
 }
 .search-patients-container {
     width: 100%;
-    background: var(--componentHighlight);
-    height: 35px;
+    background: var(--dsComponentHighlight);
+    /* height: 35px; */
+    height: 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-radius: 15px;
+    /* border-radius: 15px; */
+    border-radius: 6px;
     margin-top: 15px;
-    border: 1px solid var(--highlight);
+    /* border: 1px solid var(--dsHighlight); */
+    box-shadow: 5px 5px 10px rgba(0,0,0,.2);
 }
 /* End of search patients section style*/
 
@@ -181,10 +203,13 @@ export default {
     display: flex;
     justify-content: space-between;
     margin-top: 10px;
-    height: calc(100vh - var(--topBarHeight) - 50px);
+    width: calc(100% - 80px);
+    margin-left: 80px;
+    height: calc(100vh - var(--topBarHeight) - 14px);
 }
 .app-container {
-    font-family: "Mohave";
+    /* font-family: "Mohave"; */
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     padding: 0 10px;
     font-size: var(--normalFontSize);
 }

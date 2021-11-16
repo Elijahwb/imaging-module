@@ -14,7 +14,7 @@ export default {
 </script>
 
 <style>
-@font-face {
+/* @font-face {
   font-family: "Mohave";
   src: local("Mohave"),
    url(./fonts/Mohave/static/Mohave-Regular.ttf) format("truetype");
@@ -23,5 +23,5 @@ export default {
   font-family: "Mohavebold";
   src: local("Mohave"),
    url(./fonts/Mohave/static/Mohave-Bold.ttf) format("truetype");
-}
+} */
 </style>

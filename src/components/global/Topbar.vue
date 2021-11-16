@@ -61,27 +61,31 @@ export default {
     display: inherit;
     align-items: center;
 }
-.menu-item:last-child {
+/* .menu-item:last-child {
     border-top-right-radius: 6px;
     border-right:1px solid #ff9500;
     border-left:1px solid #ff9500;
 }
 .menu-item:nth-child(2) {
     border-left:1px solid #ff9500;
-}
-.menu-item:first-child {
+} */
+/* .menu-item:first-child {
     border-top-left-radius: 6px;
     border-left:1px solid #ff9500;
-}
+} */
 .menu-item.router-link-exact-active {
     /* background: #ff9500; */
-    background: rgb(249,142,0);
-    background: linear-gradient(0deg, rgba(249,142,0,1) 0%, rgba(255,147,2,1) 35%, rgba(255,182,102,1) 100%);
+    color: var(--dsBrandColor);
+    border-bottom: 3px solid var(--dsBrandColor);
+    /* background: rgb(249,142,0);
+    background: linear-gradient(0deg, rgba(249,142,0,1) 0%, rgba(255,147,2,1) 35%, rgba(255,182,102,1) 100%); */
 }
 .menu-item.active {
     /* background: #ff9500; */
-    background: rgb(249,142,0);
-    background: linear-gradient(0deg, rgba(249,142,0,1) 0%, rgba(255,147,2,1) 35%, rgba(255,182,102,1) 100%);
+    color: var(--dsBrandColor);
+    border-bottom: 3px solid var(--dsBrandColor);
+    /* background: rgb(249,142,0);
+    background: linear-gradient(0deg, rgba(249,142,0,1) 0%, rgba(255,147,2,1) 35%, rgba(255,182,102,1) 100%); */
 }
 /* .menu-item {
     width: 100px;
@@ -91,8 +95,8 @@ export default {
     padding: 10px 20px;
 } */
 .menu-item {
-    border-top:1px solid #ff9500;
-    border-bottom:1px solid #ff9500;
+    /* border-top:1px solid #ff9500;
+    border-bottom:1px solid #ff9500; */
     min-width: 100px;
     text-align: center;
     padding: 5px 20px;
@@ -100,6 +104,7 @@ export default {
     display: flex;
     justify-content: center;
     align-items: center;
+    border-bottom: 3px solid transparent;
 }
 .main-menu {
     display: inherit;
@@ -115,6 +120,8 @@ export default {
     margin-bottom: 0;
 }
 .top-bar {
+    width: calc(100% - 80px);
+    margin-left: 80px;
     height: var(--topBarHeight);
     /* border: 1px solid #fff; */
     display: flex;

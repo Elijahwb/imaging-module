@@ -94,7 +94,7 @@ export default {
 .images-container::-webkit-scrollbar-thumb {
     background-color: transparent;
     border-radius: 2px;
-    border: 3px solid var(--highlight);
+    border: 3px solid var(--dsBrandColor);
 }
 .zoomed-in .images-container {
     align-items: flex-start !important;

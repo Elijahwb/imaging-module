@@ -47,8 +47,8 @@ export default {
 }
 .images-row::-webkit-scrollbar {
     width: 2px;
-    height: 8px;
-    scrollbar-color: var(--highlight) var(--highlight);
+    height: 6px;
+    scrollbar-color: var(--dsBrandColor) var(--dsBrandColor);
 }
 .images-row::-webkit-scrollbar-track {
     background: transparent;
@@ -56,7 +56,7 @@ export default {
 .images-row::-webkit-scrollbar-thumb {
     background-color: transparent;
     border-radius: 2px;
-    border: 1px solid var(--highlight);
+    border: 1px solid var(--dsBrandColor);
 }
 .images-row {
     display: flex;
