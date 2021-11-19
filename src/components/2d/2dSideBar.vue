@@ -12,12 +12,15 @@
 </template>
 
 <script>
-import GeneralEditing from "../GeneralEditing.vue";
-import TreatmentEditing from "../TreatmentEditing.vue";
-import ViewPropertyEditing from "../ViewPropertyEditing.vue";
-import ObjectEditing from "../ObjectEditing.vue";
-import MeasurementEditing from "../MeasurementEditing.vue";
-import DrawingEditing from "../DrawingEditing.vue";
+import {
+  GeneralEditing,
+  TreatmentEditing,
+  ViewPropertyEditing,
+  ObjectEditing,
+  MeasurementEditing,
+  DrawingEditing,
+} from "../";
+
 export default {
   name: "SideBar",
   components: {
