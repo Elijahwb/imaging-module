@@ -10,5 +10,9 @@ export default {
     components: {
         Homeframe,
     },
+    mounted() {
+        console.log('This is the current route');
+        console.log(this.$router.currentRoute.query);
+    },
 }
 </script>
