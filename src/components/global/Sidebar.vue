@@ -47,7 +47,7 @@
         <div class="m-1 whitepsace-nowrap text-white text-xs">Appointments</div>
       </span>
     </a>
-    <a href="https://app.projectdental.nl/billing">
+    <a href="https://app.projectdental.nl/billing"  class="sidebar-item">
       <svg :class="{'text-white scale-100' : isImaging}" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 sidebar-icon transition duration-200 transform group-hover:text-white ease-in scale-75 group-hover:scale-100" fill="none" viewBox="0 0 24 24" stroke="currentColor">
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z" />
         </svg>
@@ -100,34 +100,7 @@
 </template>
 
 <script>
-// import {
-//   CalendarIcon,
-//   DesktopComputerIcon,
-//   CreditCardIcon,
-//   ChartSquareBarIcon,
-//   ShieldCheckIcon,
-//   PhotographIcon,
-//   UserGroupIcon,
-//   ViewGridIcon,
-//   LogoutIcon,
-// } from '@heroicons/vue/outline';
-
 export default {
-  data() {
-    return {
-    };
-  },
-//   components: {
-//     CalendarIcon,
-//     ViewGridIcon,
-//     DesktopComputerIcon,
-//     CreditCardIcon,
-//     ChartSquareBarIcon,
-//     ShieldCheckIcon,
-//     PhotographIcon,
-//     UserGroupIcon,
-//     LogoutIcon,
-//   },
   methods: {
     goToNameRoute(route) {
       this.$router.push(route);
