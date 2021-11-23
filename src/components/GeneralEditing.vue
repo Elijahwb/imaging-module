@@ -20,7 +20,7 @@
   </EditingCard>
 </template>
 
-<script>
+<script lang='ts'>
 import EditingCard from "./EditingCard.vue";
 import SearchIcon from "@/assets/icons/General1.svg";
 import MenuIcon from "@/assets/icons/General2.svg";
@@ -39,7 +39,7 @@ export default {
     General5,
   },
   methods: {
-    onClicked() {
+    onClicked(): void {
       console.log("Yeah clicked");
     },
   },

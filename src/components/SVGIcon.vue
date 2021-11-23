@@ -18,7 +18,7 @@
     </g>
   </svg>
 </template>
-<script>
+<script lang='ts'>
 export default {
   props: {
     viewBox: { type: String, default: "0 0 24 24" },

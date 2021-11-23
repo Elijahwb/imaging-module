@@ -22,13 +22,15 @@ import SectionImages from "./SectionImages.vue";
 import SectionVideos from "./SectionVideos.vue";
 import Editor2d from "./2dEditor.vue";
 import Component from "vue-class-component";
+import Editor from "./Editor.vue";
 
 @Component({
   name: "ContentBody2D",
   components: {
-    // SectionImages,
-    // SectionVideos,
+    SectionImages,
+    SectionVideos,
     Editor2d,
+    Editor,
   },
 })
 export default class ContentBody2D extends Vue {}

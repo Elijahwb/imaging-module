@@ -20,7 +20,7 @@
   </EditingCard>
 </template>
 
-<script>
+<script lang='ts'>
 import EditingCard from "./EditingCard.vue";
 import Measurement1 from "@/assets/icons/Measurement1.svg";
 import Measurement2 from "@/assets/icons/Measurement2.svg";
@@ -39,7 +39,7 @@ export default {
     Measurement5,
   },
   methods: {
-    onClicked() {
+    onClicked(): void {
       console.log("Yeah clicked");
     },
   },

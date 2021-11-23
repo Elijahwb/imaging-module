@@ -9,7 +9,7 @@
   </EditingCard>
 </template>
 
-<script>
+<script lang='ts'>
 import EditingCard from "./EditingCard.vue";
 export default {
   name: "TreatmentEditing",

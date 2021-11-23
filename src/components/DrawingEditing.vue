@@ -17,7 +17,7 @@
   </EditingCard>
 </template>
 
-<script>
+<script lang='ts'>
 import EditingCard from "./EditingCard.vue";
 import Drawing1 from "@/assets/icons/Drawing1.svg";
 import Drawing2 from "@/assets/icons/Drawing2.svg";
@@ -33,7 +33,7 @@ export default {
     Drawing4,
   },
   methods: {
-    onClicked() {
+    onClicked(): void {
       console.log("Yeah clicked");
     },
   },

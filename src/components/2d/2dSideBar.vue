@@ -11,7 +11,8 @@
   </div>
 </template>
 
-<script>
+<script lang="ts">
+import Vue from "vue";
 import {
   GeneralEditing,
   TreatmentEditing,
@@ -21,7 +22,7 @@ import {
   DrawingEditing,
 } from "../";
 
-export default {
+export default Vue.extend({
   name: "SideBar",
   components: {
     GeneralEditing,
@@ -31,8 +32,8 @@ export default {
     MeasurementEditing,
     DrawingEditing,
   },
-};
-</script>
+});
+</script>>
 
 <style  scoped>
 .side-bar {

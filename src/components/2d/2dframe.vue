@@ -12,7 +12,7 @@
   </section>
 </template>
 
-<script>
+<script lang='ts'>
 import Topbar from "../global/Topbar.vue";
 import Sidecontent from "../global/SideContent.vue";
 import Contentsection from "../global/ContentContainer.vue";
@@ -41,7 +41,8 @@ export default {
 }
 .app-container {
   /* font-family: "Mohave"; */
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   padding: 0 10px;
 }
 </style>

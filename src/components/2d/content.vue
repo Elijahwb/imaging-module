@@ -38,12 +38,15 @@
   </div>
 </template>
 
-<script>
+<script lang='ts'>
+import Vue from "vue";
 import CroppedImages from "../global/CroppedImages.vue";
 import ImageFilter from "./ImageFilter.vue";
 import TimestampFilter from "./TimestampFilter.vue";
 import Slider from "../global/RangeSlider.vue";
-export default {
+import Component from "vue-class-component";
+
+@Component({
   name: "2dContentBody",
   components: {
     CroppedImages,
@@ -51,13 +54,11 @@ export default {
     TimestampFilter,
     Slider,
   },
-  data() {
-    return {
-      cropped: ["5.jpeg", "4.jpeg", "3.jpeg", "2.jpeg", "1.jpeg"],
-      paranomas: ["1.jpeg", "2.jpeg", "3.jpeg", "4.jpeg", "5.jpeg"],
-    };
-  },
-};
+})
+export default class ContentBody2d extends Vue {
+  cropped = ["5.jpeg", "4.jpeg", "3.jpeg", "2.jpeg", "1.jpeg"];
+  paranomas = ["1.jpeg", "2.jpeg", "3.jpeg", "4.jpeg", "5.jpeg"];
+}
 </script>
 
 <style scoped>

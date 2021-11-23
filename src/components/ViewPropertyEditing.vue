@@ -58,7 +58,7 @@
   </EditingCard>
 </template>
 
-<script>
+<script lang='ts'>
 import EditingCard from "./EditingCard.vue";
 import Slider from "./global/Ranger.vue";
 import LightIcon from "@/assets/icons/Viewerproperty1.svg";
