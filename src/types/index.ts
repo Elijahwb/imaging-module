@@ -4,3 +4,10 @@ export interface Photo {
     created_at: string,
     type: string
 }
+
+export interface EditorDimensions {
+    oldWidth: number,
+    oldHeight: number,
+    newWidth: number,
+    newHeight: number,
+}
