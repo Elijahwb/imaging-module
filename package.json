@@ -13,6 +13,7 @@
     "core-js": "^3.6.5",
     "jquery": "^3.6.0",
     "popper.js": "^1.16.1",
+    "three": "^0.134.0",
     "vue": "^2.6.11",
     "vue-router": "^3.5.3",
     "vue-video-player": "^5.0.2",

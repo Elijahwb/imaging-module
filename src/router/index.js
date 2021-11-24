@@ -7,22 +7,22 @@ const routes = [
         path: '/',
         name: 'Home',
         component: () => import("@/views/Home.vue"),
-        beforeEnter: async (to, from, next) => {
-            if(from.name == null) {
+        // beforeEnter: async (to, from, next) => {
+        //     if(from.name == null) {
                 
-                if (to.query.isAuth !== 'true') location.replace('https://app.projectdental.nl/dashboard');
-                else {
-                    sessionStorage.setItem('isDentalSoftImagingAuth', true);
-                    next();
-                }
-            }
-            else {
-                let isImagingAuth = sessionStorage.getItem('isDentalSoftImagingAuth');
+        //         if (to.query.isAuth !== 'true') location.replace('https://app.projectdental.nl/dashboard');
+        //         else {
+        //             sessionStorage.setItem('isDentalSoftImagingAuth', true);
+        //             next();
+        //         }
+        //     }
+        //     else {
+        //         let isImagingAuth = sessionStorage.getItem('isDentalSoftImagingAuth');
 
-                if(isImagingAuth !== "true") location.replace('https://app.projectdental.nl/dashboard');
-                else next();
-            }
-        }
+        //         if(isImagingAuth !== "true") location.replace('https://app.projectdental.nl/dashboard');
+        //         else next();
+        //     }
+        // }
     },
     {
         path: '/patient/modularity',
@@ -65,10 +65,10 @@ const router = new VueRouter({
     routes,
 });
 
-router.beforeEach((to, from, next) => {
-    let isAuth = sessionStorage.getItem('isDentalSoftImagingAuth');
-    if (to.name != "Home" && isAuth !== 'true') location.replace('https://app.projectdental.nl/dashboard');
-    else next();
-  });
+// router.beforeEach((to, from, next) => {
+//     let isAuth = sessionStorage.getItem('isDentalSoftImagingAuth');
+//     if (to.name != "Home" && isAuth !== 'true') location.replace('https://app.projectdental.nl/dashboard');
+//     else next();
+// });
 
 export default router;
